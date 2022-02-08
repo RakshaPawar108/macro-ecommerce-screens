@@ -1,0 +1,147 @@
+.header {
+  background-color: var(--light-purple);
+  color: var(--secondary-color);
+  height: 7rem;
+  display: flex;
+  align-items: space-between;
+  position: relative;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.navigation-brand {
+  padding: 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.navigation {
+  background-color: var(--light-purple);
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  transition: all 0.7s ease;
+  z-index: 2;
+  border-bottom-right-radius: 0rem;
+  display: none;
+}
+
+.button {
+  background: var(--dark-gray);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.search label {
+  color: var(--secondary-color);
+  padding-left: 0.5rem;
+}
+
+.navbar-show {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  display: block;
+}
+
+.navigation-items {
+  padding: 1rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 1rem;
+}
+
+.navigation-items li {
+  display: block;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.navigation-item {
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.navbar-open-btn {
+  padding: 1.5rem;
+  margin-left: auto;
+}
+
+.navbar-close-btn i {
+  color: var(--secondary-color);
+  padding: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  text-align: center;
+}
+
+.badge-icon {
+  font-size: 2rem;
+}
+
+.icon-badge {
+  background-color: var(--red);
+  color: var(--default-color);
+  font-weight: 600;
+  width: 2rem;
+  height: 2rem;
+  top: 0.2rem;
+  right: 0.5rem;
+}
+
+@media screen and (min-width: 760px) {
+  .navbar-open-btn {
+    display: none;
+  }
+
+  .navbar-close-btn {
+    display: none;
+  }
+
+  .search {
+    width: 50%;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: space-evenly;
+    justify-content: center;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+  }
+
+  .navigation-items {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .navigation-item {
+    display: inline-block;
+  }
+
+  .button {
+    margin: 0;
+  }
+}
