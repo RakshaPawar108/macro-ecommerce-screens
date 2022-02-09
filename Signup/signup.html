@@ -13,9 +13,10 @@
       rel="stylesheet"
       href="https://pastel-ui.netlify.app/css/components.css"
     />
-    <link rel="stylesheet" href="/Navbar/navbar.css" />
+
+    <!-- My Stylesheet -->
     <link rel="stylesheet" href="/css/main.css" />
-    <title>Navbar | E-commerce</title>
+    <title>E-Commerce | Signup</title>
   </head>
   <body>
     <header class="header">
@@ -51,6 +52,36 @@
         </button>
       </nav>
     </header>
+
+    <main class="main-wrapper">
+      <form class="auth-container">
+        <h1 class="auth-title">Signup</h1>
+        <p class="auth-subtitle">Create an Account</p>
+        <div class="input-container standard auth-name">
+          <input type="text" />
+          <label>Enter Your Name</label>
+        </div>
+        <div class="input-container standard auth-email">
+          <input type="email" />
+          <label>Enter Your Email</label>
+          <small>Enter Valid Email</small>
+        </div>
+
+        <div class="input-container standard auth-password">
+          <input type="password" />
+          <label>Enter Password</label>
+          <small>Enter Valid Password</small>
+        </div>
+
+        <button type="submit" class="button btn-info btn-signup">
+          Sign Up
+        </button>
+        <p class="auth-link">
+          Already have an existing account?
+          <a href="/Login/login.html">Login</a>
+        </p>
+      </form>
+    </main>
 
     <script src="/js/navbar.js"></script>
   </body>
