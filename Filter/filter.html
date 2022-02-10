@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/dd0d05bba7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://pastel-ui.netlify.app/css/components.css"
+    />
+
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/Filter/filter.css" />
+    <title>E-Commerce | Filter Component</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navigation-brand"><a href="/index.html">MySite</a></div>
+      <div class="input-container outlined search">
+        <input type="text" />
+        <label>Search for Products, Brands and more...</label>
+      </div>
+      <button class="navbar-open-btn">
+        <i class="fas fa-2x fa-bars"></i>
+      </button>
+      <nav class="navigation navbar-show">
+        <ul class="navigation-items">
+          <li class="navigation-item">
+            <button class="button">
+              <a href="/Login/login.html">Login</a>
+            </button>
+          </li>
+          <li class="navigation-item">
+            <a href="/Wishlist/wishlist.html">
+              <div class="icons-container badge">
+                <i class="fas fa-heart badge-icon"></i>
+                <span class="icon-badge">10</span>
+              </div>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <div class="icons-container badge">
+              <i class="fas fa-shopping-cart badge-icon"></i>
+              <span class="icon-badge">5</span>
+            </div>
+            <span>Cart</span>
+          </li>
+        </ul>
+        <button class="navbar-close-btn">
+          <i class="far fa-2x fa-times-circle"></i>
+        </button>
+      </nav>
+    </header>
+
+    <aside class="filter-container">
+      <div class="filter-heading">
+        <h2 class="main-heading">Filters</h2>
+        <button class="filter-clear-btn">Clear</button>
+      </div>
+
+      <!-- Price filter slider -->
+      <div class="filter-type">
+        <h3 class="filter-type-heading">Price</h3>
+        <div class="filter-type-container">
+          <label for="cost-slider">Rs.0 - Rs.1000</label>
+          <input type="range" id="cost-slider" min="0" max="1000" value="500" />
+        </div>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="filter-type">
+        <h3 class="filter-type-heading">Category</h3>
+        <div class="filter-type-container">
+          <input type="checkbox" id="healthy" />
+          <label for="healthy">Healthy</label>
+        </div>
+        <div class="filter-type-container">
+          <input type="checkbox" id="fast-food" />
+          <label for="fast-food">Fast Food</label>
+        </div>
+        <div class="filter-type-container">
+          <input type="checkbox" id="veg" />
+          <label for="veg">Vegetarian</label>
+        </div>
+        <div class="filter-type-container">
+          <input type="checkbox" id="non-veg" />
+          <label for="non-veg">Non Vegetarian</label>
+        </div>
+        <div class="filter-type-container">
+          <input type="checkbox" id="continental" />
+          <label for="continental">Continental</label>
+        </div>
+      </div>
+
+      <!-- Rating Filter -->
+      <div class="filter-type">
+        <h3 class="filter-type-heading">Ratings</h3>
+        <div class="filter-type-container">
+          <input type="radio" name="star-rating" />
+          <label for="star-four">4⭐ and above</label>
+        </div>
+        <div class="filter-type-container">
+          <input type="radio" name="star-rating" />
+          <label for="star-three">3⭐ and above</label>
+        </div>
+        <div class="filter-type-container">
+          <input type="radio" name="star-rating" />
+          <label for="star-two">2⭐ and above</label>
+        </div>
+        <div class="filter-type-container">
+          <input type="radio" name="star-rating" />
+          <label for="star-one">1⭐ and above</label>
+        </div>
+      </div>
+
+      <!-- Price filter radio -->
+      <div class="filter-type">
+        <h3 class="filter-type-heading">Sort by</h3>
+        <div class="filter-type-container">
+          <input type="radio" id="low-to-high" name="sort-by" />
+          <label for="low-to-high">Price - Low to High</label>
+        </div>
+        <div class="filter-type-container">
+          <input type="radio" id="high-to-low" name="sort-by" />
+          <label for="high-to-low">Price - High to Low</label>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>
