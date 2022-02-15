@@ -2,10 +2,6 @@
   /* Colours */
   --primary-color: var(--default-color);
   --secondary-color: var(--white);
-  --background: #fae1ca;
-  --new-york-pink: #e99394;
-  --melon: #f2baaf;
-  --apricot: #f6cdbc;
 
   --default-color: #000000;
   --white: #fff;
@@ -17,6 +13,7 @@
   --light-purple: #bb86fc;
 
   --green: #008000;
+  --light-green: #8bda8b;
   --yellow: #ffff00;
   --red: #ff0000;
   --blue: #0000ff;
@@ -26,8 +23,4 @@
 
   /* Fonts */
   --primary-font: "Poppins", sans-serif;
-
-  /* Media Queries */
-  --breakpoint-sm: 700px;
-  --breakpoint-lg: 1000px;
 }
