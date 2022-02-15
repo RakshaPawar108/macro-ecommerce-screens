@@ -1,5 +1,6 @@
 .product-wrapper {
   display: flex;
+  background-color: var(--gray);
 }
 
 .product-container {

@@ -1,3 +1,7 @@
+body {
+  background-color: var(--gray);
+}
+
 .wishlist-wrapper {
   width: 90%;
   margin: 5rem auto 7rem auto;
