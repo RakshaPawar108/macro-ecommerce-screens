@@ -1,0 +1,10 @@
+.screens-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item:hover {
+  background-color: var(--light-purple);
+  cursor: pointer;
+}

@@ -64,3 +64,14 @@
 .auth-link a {
   color: var(--dark-blue);
 }
+
+.auth-logout-icon {
+  color: var(--green);
+  font-size: 4rem;
+}
+
+.auth-logout-title {
+  font-size: 2.5rem;
+  padding: 2rem;
+  text-align: center;
+}
