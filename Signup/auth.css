@@ -32,7 +32,8 @@
 
 .auth-name,
 .auth-email,
-.auth-password {
+.auth-password,
+.auth-password-confirm {
   width: 100%;
   margin: 2rem;
   padding: 1rem;
@@ -40,12 +41,15 @@
 
 .auth-name label,
 .auth-email label,
-.auth-password label {
+.auth-password label,
+.inline-checkbox label,
+.auth-password-confirm label {
   font-size: 1.3rem;
 }
 
 .auth-email small,
-.auth-password small {
+.auth-password small,
+.auth-password-confirm small {
   display: none;
 }
 
@@ -74,4 +78,20 @@
   font-size: 2.5rem;
   padding: 2rem;
   text-align: center;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inline-checkbox {
+  margin: 1rem 1rem;
+}
+
+.remember-box {
+  padding-left: 0.5rem;
+  color: var(--default-color);
 }
