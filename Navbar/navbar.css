@@ -1,7 +1,7 @@
 .header {
   background-color: var(--default-color);
   color: var(--golden);
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -17,7 +17,8 @@
 }
 
 .button {
-  background: var(--dark-gray);
+  background: var(--dark-blue);
+  padding: 0.5rem;
 }
 
 .search-box {
@@ -52,17 +53,6 @@
 .search-box input:not(:placeholder-shown) ~ label {
   top: -15px;
 }
-
-/* .navbar-show {
-  transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-} */
 
 .navigation-items {
   color: var(--secondary-color);
